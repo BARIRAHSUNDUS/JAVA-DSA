@@ -14,6 +14,7 @@ public class Subarray_Max_Sum_Brute_force
                 {
                     sum = sum + num[k];
                 }
+                System.out.println(sum);
                 if(sum >= max)
                 {
                     max = sum;
