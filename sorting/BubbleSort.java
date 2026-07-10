@@ -6,7 +6,7 @@ public class BubbleSort {
     // Runs (n - 1) times because each pass fixes one element
     // at its correct position at the end of the array.
     for (int i = 0; i < num.length - 1; i++) {
-
+      int count = 0;
       // Inner loop:
       // Compares adjacent elements only in the unsorted part.
       // The last i elements are already sorted.
@@ -16,7 +16,11 @@ public class BubbleSort {
           int temp = num[j];
           num[j] = num[j + 1];
           num[j + 1] = temp;
+          count++;
         }
+      }
+      if (count == 0) {
+        break;
       }
     }
 
