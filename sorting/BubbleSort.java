@@ -11,8 +11,8 @@ public class BubbleSort {
       // Compares adjacent elements only in the unsorted part.
       // The last i elements are already sorted.
       for (int j = 0; j < num.length - 1 - i; j++) {
-
-        if (num[j] > num[j + 1]) {
+        // ascending order:
+        if (num[j] > num[j + 1]) { // descending order: if (num[j] < num[j + 1]) just change the sign
           int temp = num[j];
           num[j] = num[j + 1];
           num[j + 1] = temp;

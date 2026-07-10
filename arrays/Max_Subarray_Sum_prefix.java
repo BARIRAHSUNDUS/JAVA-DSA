@@ -18,7 +18,7 @@ public class Max_Subarray_Sum_prefix {
   // function to find the max using the prefix array:
   public static void max(int num[]) {
     int max1 = Integer.MIN_VALUE;
-    int sum = num[0];
+    int sum;
 
     for (int i = 0; i < num.length; i++) {
       for (int j = i; j < num.length; j++) {
